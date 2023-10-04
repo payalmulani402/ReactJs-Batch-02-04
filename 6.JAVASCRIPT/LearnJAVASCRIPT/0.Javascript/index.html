@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload='document.form1.ip_address.focus()'>
+    <!-- css portion -->
+
+    <!-- <nav class="navbar">
+        <span>
+            <a href="#"><img src="icons8-batman-logo-500.png" alt="" height="auto" width="50px"></a>
+        </span>
+        <div class="main" id="menu">
+            <button id="user-menu" onclick="show()">
+                <i class="fa-solid fa-bars fa-shake"></i>
+            </button>
+            <div id="user-menu-dropdown" class="dropdown">
+                <div class="menu-items">
+                    <a href="#">My Profile <img src="icons8-batman-logo-500.png" alt="" height="20px" width="20px"></a>
+                    <a href="#">About Us</a>
+                    <a href="#">Pages</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav> -->
+
+
+    <!-- <h1>Hi Mom!</h1>
+    <section>
+        <h1>Hi Mom</h1>
+        <p>This is my website</p>
+    </section>
+
+    <section>
+        <h2>Buy my product</h2>
+        <p>
+            The things you own end up owning you.
+            It's only after you lose everything that you're free to do anything
+        </p>
+    </section>
+
+    <section>
+        <h2>It's really good</h2>
+    </section> -->
+
+
+        <!-- javascript portion-->
+        <!-- onload='document.form1.ip_address.focus()' -->
+
+        <input type="text" id="name" required>
+
+
+    <div class="mail">
+        <h2>Enter an IP address and Submit</h2>
+        <form name="form1" action="#">
+            <input type='text' name='ip_address' placeholder="e.g. 192.168.1.1" />
+            <input type="submit" name="submit" value="Submit" onclick="ValidateIPaddress(document.form1.ip_address)" />
+        </form>
+        <select id="myDropdown"></select>
+
+        <img src="" id="image" alt="">
+
+        <select id="statusCode" onchange="myFunction()">
+            <option value="Green">Green</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Red">Red</option>
+        </select>
+        <p>
+            <img src="https://clipart-library.com/image_gallery/156788.png" style="display: none;" id="greenDot" />
+            <img src="https://www.clker.com/cliparts/o/b/y/x/Z/c/yellow-dot-md.png" style="display: none;"
+                id="yellowDot" />
+            <img src="https://www.clker.com/cliparts/s/o/v/c/T/Y/red-dot-md.png" style="display:none;" id="redDot" />
+        </p>
+        <button onclick="clearInterval(first)">Click</button>
+        <script src="index.js"></script>
+</body>
+
+</html>
