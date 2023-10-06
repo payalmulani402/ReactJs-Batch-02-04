@@ -326,9 +326,9 @@ Array indexes start with 0:
  /*  javascript Sorting Array */
  
  {
-    //  let book = ["math"  , "chemistry"  , "physics" , "bio" , "amazon"];
-    //  let books = book.sort();
-    //  console.log(books);
+     let book = ["math"  , "chemistry"  , "physics" , "bio" , "amazon"];
+     let books = book.sort();
+     console.log(books);
  }
  
  /*  Reversing array */
@@ -345,10 +345,10 @@ Array indexes start with 0:
  /*  Number Sort */
  
  {
-    //  const number1 = [40, 12, 15, 81 ,150 ,200];
-    //  console.log(number1);
-    //  const number2 = number1.sort(function(a , b){return a - b});
-    //  console.log(number2);
+     const number1 = [40, 12, 15, 81 ,150 ,200];
+     console.log(number1);
+     const number2 = number1.sort(function(a , b){return a - b});
+     console.log(number2);
  }
  
  /*  Javascript Array Iteration */
