@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 
 const ButtonAlert = ({onClick , children}) => {
      return(
@@ -15,16 +15,16 @@ const PlayButton = ({MovieName}) =>{
      )
 }
 
-ButtonAlert.propTypes = {
-     onClick : PropTypes.element,
-     children : PropTypes.element,
-     MovieName : PropTypes.string
+// ButtonAlert.propTypes = {
+//      onClick : PropTypes.element,
+//      children : PropTypes.element,
+//      MovieName : PropTypes.string
 
-}
+// }
 
-PlayButton.propTypes = {
-     MovieName : PropTypes.string
-}
+// PlayButton.propTypes = {
+//      MovieName : PropTypes.string
+// }
 
 
 const UploadButton = () =>{
@@ -44,5 +44,11 @@ const ClickOn6 = () => {
     </div>
   )
 }
+
+
+
+/*  Task-1 : Two props pass as button name and print in console */
+/*  Task-2 : Four Props interchange between two function and print console one element */
+
 
 export default ClickOn6

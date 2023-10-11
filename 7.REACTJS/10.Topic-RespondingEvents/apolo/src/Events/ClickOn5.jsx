@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 
 const ButtonAlert = ({message , children}) => {
      return(
@@ -6,10 +6,10 @@ const ButtonAlert = ({message , children}) => {
      );
 }
 
-ButtonAlert.propTypes = {
-     message : PropTypes.string,
-     children : PropTypes.element,
-}
+// ButtonAlert.propTypes = {
+//      message : PropTypes.string,
+//      children : PropTypes.element,
+// }
 
 const ClickOn5 = () => {
      /* Reading props in event handlers */
