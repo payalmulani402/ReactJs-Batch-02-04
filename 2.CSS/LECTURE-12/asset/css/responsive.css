@@ -20,17 +20,47 @@
 @media (max-width: 768px) {
   nav ul{
     display: none;
+    margin: 0;
+    padding: 0;
   }
-  nav:hover ul{
+  nav:focus-within ul{
     display: block;
     position: absolute;
     top:0;
-    background-color: black;
+    background-color:white;
+    border:5px solid rgb(0, 140, 227);
     height: 100vh;
     left: 0;
+    z-index: 1000;
+    animation-name: slide;
+    animation-duration: 0.4s;
+  }
+
+  nav ul li{
+    text-align: center;
+    margin: 50px 50px;
+  }
+
+  nav ul li a{
+    color:black;
+    width: 100%;
+    font-size: 26px;
+  }
+  
+
+  @keyframes slide{
+    0%{
+      transform: translate(-500px);
+    }
+    100%{
+      transform: translate(0px);
+    }
   }
   .mobile-menu{
     display: block;
+  }
+  .maindiv{
+    justify-content: space-between;
   }
 } 
 
