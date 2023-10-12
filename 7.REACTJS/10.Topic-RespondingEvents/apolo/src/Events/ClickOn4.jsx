@@ -5,9 +5,10 @@ const ClickOn4 = () => {
      const handleClick = () => {
           alert("You are use Function")
      }
+
   return (
     <div>
-      <button className="button" onClick={handleClick}>Click</button>
+      <button className="button" onClick={handleClick()}>Click</button>
     </div>
   )
 }

@@ -8,7 +8,6 @@ import './App.css'
 // import ClickOn7 from './Events/ClickOn7'
 import ClickOn8 from './Events/ClickOn8'
 
-
 function App() {
 
   return (
