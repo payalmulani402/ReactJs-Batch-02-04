@@ -1,10 +1,10 @@
 import { ImageList } from './data'
 import { useState } from 'react';
 
-const States = () => {
+const MultipleStates = () => {
 
-    // let index = 0;
     const [index, setIndex] = useState(0);
+    const [show, setShow] = useState(0);
 
     function handleClickNext() {
         setIndex(index + 1)
@@ -12,6 +12,10 @@ const States = () => {
 
     function handleClickPrev() {
         setIndex(index - 1)
+    }
+
+    function handleClickShow(){
+     setShow(!show)
     }
 
     console.log(index);
@@ -23,6 +27,9 @@ const States = () => {
             <div className="h-[500px] w-[500px] bg-slate-400 m-auto shadow-2xl p-10">
                 <button className='h-6 w-20 bg-white' onClick={handleClickNext}>Next</button>
                 <button className='h-6 ms-10 w-20 bg-white' onClick={handleClickPrev}>Prev</button>
+                <button className='h-6 ms-10 w-20 bg-white' onClick={handleClickShow}>
+                    {show ? 'Hide' : 'Show'}Detail
+                </button>
                 <div className=" ">
                     <h2>
                         <b>{Image.title}</b>
@@ -31,13 +38,11 @@ const States = () => {
                         ({index + 1} of {ImageList.length})
                     </h3>
                     <img src={Image.url} alt="" />
-                    <p>
-                        {Image.description}
-                    </p>
+                    {show && <p>{Image.description}</p>}
                 </div>
             </div>
         </div>
     )
 }
 
-export default States
+export default MultipleStates

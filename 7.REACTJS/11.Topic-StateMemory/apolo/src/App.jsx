@@ -1,12 +1,11 @@
 import './App.css'
-import States from './StateMemory/States'
-
+import MultipleStates from './StateMemory/MultipleStates'
 function App() {
 
   return (
     <>
     <div>
-      <States/> 
+      <MultipleStates/> 
     </div>
     </>
   )
