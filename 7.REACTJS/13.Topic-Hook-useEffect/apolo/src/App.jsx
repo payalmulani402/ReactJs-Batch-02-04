@@ -1,9 +1,11 @@
 import './App.css'
+import Use_Effect_4 from './Hook_useEffect/Use_Effect_4'
 
 function App() {
   return (
     <>
     <div>
+    <Use_Effect_4 message="Css"/>
     </div>
     </>
   )

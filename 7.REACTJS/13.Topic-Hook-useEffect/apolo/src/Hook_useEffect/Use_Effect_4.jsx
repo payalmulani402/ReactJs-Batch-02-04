@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react';
 
-const Use_Effect_4 = () => {
+const Use_Effect_4 = ({message}) => {
     useEffect(() => {
         setInterval(() => {
           console.log(message);

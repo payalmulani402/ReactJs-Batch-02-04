@@ -42,11 +42,13 @@ import { useEffect } from 'react'
 // useEffect(()->{
 //     // Example Code
 // })
+
 // 2. To run useEffect only once on the first render pass any empty array in the dependecy
 
 // useEffect(()->{
 //     // Example Code
 // }, [] )
+
 // 3. To run useEffect on change of a particular value. Pass the state and props in the dependency array
 
 // useEffect(()->{
@@ -58,8 +60,8 @@ const Use_Effect_2 = ({names}) => {
     const message = `Hello, ${names}!`;
 
     useEffect(() => {
-      document.title = 'Greetings page';
-    }, []);
+      document.title = `Greetings page ${names}`;
+    });
   
     return <div>{message}</div>;
 }
