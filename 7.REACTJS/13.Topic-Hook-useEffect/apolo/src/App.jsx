@@ -1,13 +1,9 @@
 import './App.css'
-import UseState_2 from './Hook_useState/UseState_2'
-
-
 
 function App() {
   return (
     <>
     <div>
-    <UseState_2/>
     </div>
     </>
   )
