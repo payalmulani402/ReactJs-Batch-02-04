@@ -23,7 +23,7 @@ const Data_Fetching = () => {
         <div>
             <ul>
                 {
-                    posts.map(post => (<li className='text-space' key={post.id}>{post.title}</li>))
+                    posts.map(post => (<li className='text-space' key={post.id}>{post.id}</li>))
                 }
             </ul>
         </div>

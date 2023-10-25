@@ -1,12 +1,16 @@
+import React from 'react'
 import './App.css'
-// import Data_Fetching from './Hook_useEffect/Data_Fetching'
-import Data_Fetching_2 from './Hook_useEffect/Data_Fetching_2'
-// import Data_Fetching_3 from './Hook_useEffect/Data_Fetching_3'
+import Use_Context_A from './Hook_useContext/use_Context_A'
+
+
+export const UserContext = React.createContext()
 function App() {
   return (
     <>
       <div>
-        <Data_Fetching_2/>
+        <UserContext.Provider value={"vivek"}>
+          <Use_Context_A />
+        </UserContext.Provider>
       </div>
     </>
   )
