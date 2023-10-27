@@ -1,10 +1,10 @@
 import React from 'react'
-import Use_context_B from './use_context_B';
+import Use_Context_B from './use_Context_B';
 
 const Use_Context_A = () => {
   return (
     <div>
-      <Use_context_B/>
+      <Use_Context_B/>
     </div>
   )
 }
