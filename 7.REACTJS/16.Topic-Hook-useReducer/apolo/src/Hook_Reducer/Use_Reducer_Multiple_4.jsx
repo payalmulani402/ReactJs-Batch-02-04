@@ -1,10 +1,9 @@
 import { useReducer } from 'react';
 
-/* convert state to object */
+/* Multiple Reducer */
 
 const initialState = {
   firstCounter : 0,
-  
 }
 
 const reducer = (state, action) => {
@@ -23,6 +22,7 @@ const reducer = (state, action) => {
 const Use_Reducer_Multiple = () => {
 
   const [count, dispatch] = useReducer(reducer, initialState)
+  const [countTWO, dispatchTwo] = useReducer(reducer, initialState)
 
   return (
     <div>
@@ -30,6 +30,12 @@ const Use_Reducer_Multiple = () => {
       <button className="button" onClick={() => dispatch({type : 'increment'})}>Increment</button>
       <button className='button' onClick={() => dispatch({type : 'decrement'})}>Decrement</button>
       <button className='button' onClick={() => dispatch({type : 'reset'})}>Reset</button>
+      <div>
+      <div className='button'>{countTWO.firstCounter}</div>
+      <button className="button" onClick={() => dispatchTwo({type : 'increment'})}>Increment</button>
+      <button className='button' onClick={() => dispatchTwo({type : 'decrement'})}>Decrement</button>
+      <button className='button' onClick={() => dispatchTwo({type : 'reset'})}>Reset</button>
+      </div>
     </div>
   )
 }

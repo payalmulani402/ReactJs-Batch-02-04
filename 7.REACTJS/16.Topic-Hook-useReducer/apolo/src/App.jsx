@@ -1,11 +1,15 @@
-import React from 'react'
 import './App.css'
-import Use_Reducer_Multiple_3 from './Hook_Reducer/Use_Reducer_Multiple_3'
+import Component_A from './Hook_Reducer/components/Component_A'
+import Component_B from './Hook_Reducer/components/Component_B'
+import Component_D from './Hook_Reducer/components/Component_D'
+
 function App() {
   return (
     <>
       <div>
-      <Use_Reducer_Multiple_3/>
+        <Component_A/>
+        <Component_B/>
+        <Component_D/>
       </div>
     </>
   )
