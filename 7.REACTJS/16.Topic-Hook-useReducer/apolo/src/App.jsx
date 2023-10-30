@@ -1,11 +1,11 @@
 import React from 'react'
 import './App.css'
-import Use_Reducer from './Hook_Reducer/Use_Reducer'
+import Use_Reducer_Multiple_3 from './Hook_Reducer/Use_Reducer_Multiple_3'
 function App() {
   return (
     <>
       <div>
-      <Use_Reducer/>
+      <Use_Reducer_Multiple_3/>
       </div>
     </>
   )
