@@ -4,7 +4,6 @@ import { useReducer } from 'react';
 
 const initialState = {
   firstCounter : 0,
-  
 }
 
 const reducer = (state, action) => {

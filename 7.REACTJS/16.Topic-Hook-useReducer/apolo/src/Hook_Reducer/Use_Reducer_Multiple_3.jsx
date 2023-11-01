@@ -47,13 +47,13 @@ const Use_Reducer_Multiple_3 = () => {
         className="button"
         onClick={() => dispatch({ type: "increment", value: 5 })}
       >
-        Increment 5
+        First Increment 5
       </button>
       <button
         className="button"
         onClick={() => dispatch({ type: "decrement", value: 5 })}
       >
-        Decrement 5
+        First Decrement 5
       </button>
       <div>
         <button
