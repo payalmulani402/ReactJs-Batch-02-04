@@ -1,15 +1,11 @@
 import './App.css'
-import Component_A from './Hook_Reducer/components/Component_A'
-import Component_B from './Hook_Reducer/components/Component_B'
-import Component_D from './Hook_Reducer/components/Component_D'
+import Counter from './Hook_Reducer/components/Counter'
 
 function App() {
   return (
     <>
       <div>
-        <Component_A/>
-        <Component_B/>
-        <Component_D/>
+      <Counter/>
       </div>
     </>
   )
