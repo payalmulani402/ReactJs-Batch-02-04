@@ -1,12 +1,9 @@
 import React from 'react'
-import Count from './Hook-useMemo/Count'
-import Count1 from './Hook-useMemo/Count1'
-
+import Count2 from './Hook-useMemo/Count2'
 const App = () => {
   return (
     <div>
-      <Count/>
-      <Count1/>
+      <Count2/>
     </div>
   )
 }
