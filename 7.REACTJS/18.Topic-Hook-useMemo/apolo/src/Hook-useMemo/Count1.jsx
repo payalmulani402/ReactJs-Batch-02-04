@@ -1,6 +1,6 @@
-import React , {useState} from 'react'
+import {useState , useMemo} from 'react'
 
-const Count = () => {
+const Count1 = () => {
 
 const [counterOne , setCounterOne] = useState(0)
 const [counterTwo , setCounterTwo] = useState(0)
@@ -14,11 +14,13 @@ const incrementTwo = () => {
   setCounterTwo(counterTwo + 1)
 }
 
-const isEven = () =>{
-  let i = 0
-  while( i < 2000000000)i++
-  return counterOne % 2 === 0
-}
+
+
+const isEven = useMemo(() =>{
+     let i = 0
+     while( i < 2000000000)i++
+     return counterOne % 2 === 0
+   } , [counterOne])
 
 
   return (
@@ -26,7 +28,7 @@ const isEven = () =>{
       <div>
         <div>
         <button className='button' onClick={incrementOne}>CountOne - {counterOne}</button>
-        <span className='button'>{isEven() ? 'Even' : 'Odd'}</span>
+        <span className='button'>{isEven ? 'Even' : 'Odd'}</span>
         </div>
         <button className='button' onClick={incrementTwo}>CountTwo - {counterTwo}</button>
       </div>
@@ -34,4 +36,4 @@ const isEven = () =>{
   )
 }
 
-export default Count
+export default Count1
