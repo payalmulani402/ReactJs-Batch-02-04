@@ -1,12 +1,11 @@
 import './App.css'
-import Component_Data_2 from './Hook_Reducer/Fetching_Data/Component_Data_2'
-
+import Parent_Components from './Hook-Callback/Parent_Components'
 
 function App() {
   return (
     <>
       <div>
-      <Component_Data_2/>
+      <Parent_Components/>
       </div>
     </>
   )

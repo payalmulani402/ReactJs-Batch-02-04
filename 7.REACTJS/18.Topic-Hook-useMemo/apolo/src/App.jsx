@@ -1,12 +1,29 @@
 import './App.css'
-import Component_Data_2 from './Hook_Reducer/Fetching_Data/Component_Data_2'
-
+import { useState } from 'react'
 
 function App() {
+
+    const [countOne , setCountOne] = useState (0)
+    const [countTwo , setCountTwo] = useState (0)
+
+    const incrementOne = () => {
+      setCountOne(countOne + 1)
+    }
+    
+    const incrementTwo = () => {
+      setCountTwo(countTwo + 1)
+    }
+
+    const isEven = () => {
+      return countOne % 20;
+    }
+
   return (
     <>
       <div>
-      <Component_Data_2/>
+        <button className="button" onClick={incrementOne}>ButtonOne - {countOne}</button>
+        <span>{isEven ? 'Even' : 'Odd'}</span>
+        <button className='button' onClick={incrementTwo}>ButtonTwo - {countTwo}</button>
       </div>
     </>
   )
