@@ -12,7 +12,7 @@ body{
 }
 
 /* Css Overlay Method */
-.center{
+/* .center{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,3 +78,39 @@ img{
     background-color: red;
 }
 
+
+
+
+h1{
+    font-size: calc(5vw + 10px);
+}
+
+
+.container{
+    height: 200px;
+    background-color: orange;
+    border:5px solid black;
+    width: calc(100vw - 5%);
+    margin: auto;
+}
+
+
+.masking{
+    -webkit-mask-image: url('fragments-mask.png');
+    mask-image:url('fragments-mask.png');
+    -webkit-mask-size: 70%;
+    mask-size: 70%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    height: 400px;
+    width: 400px;
+} */
+
+/* Css Max() and Min() */
+
+.min-div{
+    height:400px;
+    width: min(50% , 500px);
+    background-color: orange;
+    margin: auto;
+}
