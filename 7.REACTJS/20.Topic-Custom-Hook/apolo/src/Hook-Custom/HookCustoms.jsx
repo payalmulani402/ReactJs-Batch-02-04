@@ -18,10 +18,10 @@ const HookCustoms = () => {
       <div>
         <span className="button">{count}</span>
         <button className="button" onClick={Increment}>
-          +
+          Increment
         </button>
         <button className="button" onClick={Decrement}>
-          -
+          Decrement
         </button>
       </div>
     </div>

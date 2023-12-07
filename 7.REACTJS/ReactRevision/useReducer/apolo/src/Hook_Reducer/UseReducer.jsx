@@ -1,23 +1,46 @@
-import { useState } from "react"
+import { useReducer } from "react"
+
+const initialState = 0;
+
+const reducer = (state, action) => {
+  if (action.type === "Increment") {
+    return state + 1
+  }
+  if (action.type === "Decrement") {
+    return state - 1
+  }
+  if (action.type === "Reset") {
+    return initialState
+  }
+  return state
+}
+
 
 
 const UseReducer = () => {
 
-     const [count , setCount] = useState(0)
+  // const [count , setCount] = useState(0)
 
-     const Increment = () =>{
-          setCount(count + 1)
-     }
+  const [state, dispatch] = useReducer(reducer, initialState)
 
-     const Decrement = () =>{
-          setCount(count - 1)
-     }
+
+  const Increment = () => {
+    dispatch({ type: "Increment" })
+  }
+
+  const Decrement = () => {
+    dispatch({ type: "Decrement" })
+  }
+  const Reset = () => {
+    dispatch({ type: "Reset" })
+  }
 
   return (
     <div>
-      <span className="button">{count}</span>
-      <button className="button" onClick={Increment}>+</button>
-      <button className="button" onClick={Decrement}>-</button>
+      <span className="button">{state}</span>
+      <button className="button" onClick={Increment}>Increment</button>
+      <button className="button" onClick={Decrement}>Decerement</button>
+      <button className="button" onClick={Reset}>Reset</button>
     </div>
   )
 }

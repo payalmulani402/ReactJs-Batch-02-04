@@ -3,11 +3,14 @@ import { useRef } from "react"
 
 const InputFocus = () => {
 
-     const inputRef = useRef("")
+     const inputRef = useRef("vivek")
      console.log(inputRef);
+
       function reset(){
         setName("")
         inputRef.current.focus()
+        inputRef.current.style.color = "black"
+        inputRef.current.style.textDecoration = "none"
       }
 
       function handleClick(){
@@ -18,9 +21,9 @@ const InputFocus = () => {
      const [name , setName] = useState("vivek")
 
     
-
-  return (
-    <div>
+    
+    return (
+      <div>
       <input ref={inputRef} type="text" value={name} onChange={(e) => setName(e.target.value) }/>
       <button onClick={reset}>Reset</button>
       <button onClick={handleClick}>handleInput</button>

@@ -1,11 +1,10 @@
 import './App.css'
-import UseReducer1 from './Hook_Reducer/UseReducer1'
-
+import UseReducer from './Hook_Reducer/UseReducer'
 function App() {
   return (
     <>
       <div>
-      <UseReducer1/>
+      <UseReducer/>
       </div>
     </>
   )
