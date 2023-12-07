@@ -1,4 +1,3 @@
-
 /* Javascript Array */
 
 // const fruits = [];
@@ -11,8 +10,10 @@
 // console.log(fruits);
 // console.log(fruits.length);
 
-// fruits[6] = "mango";
-// console.log(fruits[6]);
+// fruits[4] = "mango";
+// console.log(fruits[4]);
+// console.log(fruits);
+
 
 // console.log(Object.keys(fruits));
 // console.log(fruits.length);
@@ -27,11 +28,12 @@
 
 // fruits.length = 2;
 // console.log(Object.keys(fruits));
+// console.log(fruits);
 // console.log(fruits.length);
 
 
 
-// array length properties
+// Array length properties
 // Accessing the First Array Element
 // Accessing the Last Array Element
 // Adding Array Elements
@@ -49,6 +51,7 @@ Array indexes start with 0:
 
 {
     // let newarray = ["madhu" , "vishal" , "kishor" , "chirag"]
+    // console.log(newarray);
 }
 
 {
@@ -56,7 +59,8 @@ Array indexes start with 0:
     //     "one" ,
     //      "two" ,
     //       "three" ,
-    //        "four"];  // javascript arrays    
+    //        "four"];  // javascript arrays  
+    // console.log(newarrrays);  
 }
 
 /* Array length properties */
@@ -75,13 +79,14 @@ Array indexes start with 0:
 
 {
     // const fruits = ["Banana", "Orange", "Apple", "Mango"];
-    // console.log(fruits[0]);
+    // console.log(fruits[3]);
 }
 
 /* Accessing the Last Array Element */
 
 {
-    // var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    // let fruits = ["Banana", "Orange", "Apple", "Mango"];
+    // console.log(fruits[1]);
     // document.getElementById("demo").innerHTML = fruits[fruits.length-3];
 }
 
@@ -95,25 +100,26 @@ Array indexes start with 0:
     //     fruits.push("Lemon");
     //     document.getElementById("demo-1").innerHTML = fruits;
     // }
+    // myFunction();
 }
 
 /* The length property provides an easy way to append new elements to an array without using the push() method. */
 
-{
-    // const fruits = ["Banana", "Orange", "Apple"];
-    // document.getElementById("demo").innerHTML = fruits;
+// {
+//     const fruits = ["Banana", "Orange", "Apple"];
+//     document.getElementById("demo").innerHTML = fruits;
 
-    // function myFunctionn() {
-    // fruits[fruits.length] = "Lemon";
-    // document.getElementById("demo-1").innerHTML = fruits;
-    // }
-}
+//     function myFunctionn() {
+//     fruits[fruits.length] = "Lemon";
+//     document.getElementById("demo-1").innerHTML = fruits;
+//     }
+// }
 
 /* Adding elements with high indexes can create undefined "holes" in an array. */
 
 {
     // const fruits = ["Banana", "Orange", "Apple"];
-    // fruits[6] = "Lemon";
+    // fruits[5] = "Lemon";
     // console.log(fruits);
 
     // let fLen = fruits.length;
@@ -121,7 +127,8 @@ Array indexes start with 0:
     // let text = "";
 
     // for (i = 0; i < fLen; i++) {
-    // text += fruits[i] + "<br>";
+    //     // text = text + fruits[i] + "<br>"
+    //     text += fruits[i] + "<br>";
     // }
 
     // document.getElementById("demo").innerHTML = text;
@@ -133,36 +140,49 @@ Array indexes start with 0:
 
 {
     // const fruits = ["Banana", "Orange", "Apple"];
-    // console.log(fruits.toString());
+    // let newArray= fruits.toString();
+    // console.log(newArray);
+    // let text = typeof(newArray)
+    // console.log(text);
 }
 
 /* The join() method also joins all array elements into a string. */
 
 {
     // const fruits = ["Banana", "Orange", "Apple", "Mango"];
-    // document.getElementById("demo").innerHTML = fruits.join(" ' ");
+    // document.getElementById("demo").innerHTML = fruits.join(" + ");
 }
 
 /* Popping in javascript Array */
 
 {
     // const fruits = ["Banana", "Orange", "Apple", "Mango"];
-
     // document.getElementById("demo").innerHTML = fruits;
+    
+    
+    // fruits.pop();
+    // fruits.pop();
+    // fruits.pop();
     // fruits.pop();
 
     // document.getElementById("demo-1").innerHTML = fruits;
+
+    // console.log(fruits.length);
 }
 
 /* The pop() method returns the value that was "popped out" */
 
-{
-    // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// {
+//     const fruits = ["Banana", "Orange", "Apple", "Mango"];
 
-    // document.getElementById("demo").innerHTML = fruits.pop();
+//     document.getElementById("demo").innerHTML = fruits;
+    
+//     document.getElementById("demo-1").innerHTML = fruits.pop();
+//     document.getElementById("demo-2").innerHTML = fruits.pop();
+//     document.getElementById("demo-3").innerHTML = fruits.pop();
 
-    // document.getElementById("demo-1").innerHTML = fruits;
-}
+//     console.log(fruits);
+// }
 
 
 /* Pushing in javascript Array */
@@ -173,6 +193,7 @@ Array indexes start with 0:
     // const fruits = ["Banana", "Orange", "Apple", "Mango"];
 
     // document.getElementById("demo").innerHTML = fruits;
+
     // fruits.push("Kiwi");
 
     // document.getElementById("demo-1").innerHTML = fruits;
@@ -204,6 +225,7 @@ Array indexes start with 0:
 
 {
     // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    // console.log(fruits);
     // document.getElementById("demo").innerHTML = fruits.shift();
     // document.getElementById("demo-1").innerHTML = fruits;
 }
@@ -215,6 +237,7 @@ Array indexes start with 0:
     // const fruits = ["Banana", "Orange", "Apple", "Mango"];
     // document.getElementById("demo").innerHTML = fruits;
     // fruits.unshift("Lemon");
+    // console.log(fruits);
     // document.getElementById("demo-1").innerHTML = fruits;
 }
 
@@ -230,9 +253,9 @@ Array indexes start with 0:
 
 {
     // const fruits = ["Banana", "Orange", "Apple", "Mango"];
-    // document.getElementById("demo").innerHTML = fruits;
-    // fruits[1] = "Kiwi";
-    // document.getElementById("demo-1").innerHTML = fruits;
+    // console.log(fruits);
+    // fruits[10] = "Kiwi";
+    // console.log(fruits);
 }
 
 /* JavaScript Array add element */
@@ -253,15 +276,17 @@ Array indexes start with 0:
 /* Use pop() or shift() instead. */
 
 {
-     // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    //  const fruits = ["Banana", "Orange", "Apple", "Mango"];
  
-     // document.getElementById("demo").innerHTML =fruits;
+    //  document.getElementById("demo").innerHTML =fruits;
  
-     // delete fruits[2];
+    //  delete fruits[2];
+
+    //  console.log(fruits);
  
-     // fruits[2] = "kiwi";
+    //  fruits[2] = "kiwi";
  
-     // document.getElementById("demo-1").innerHTML =fruits;
+    //  document.getElementById("demo-1").innerHTML =fruits;
  }
  
  /* Merging (Concatenating) Arrays */
@@ -270,10 +295,16 @@ Array indexes start with 0:
     //  const myGirls = ["Cecilie", "Lone"];
     //  const myboys1 = ["Emil", "Tobias", "Linus"];
     //  const myboys2 = ["ajay" ,"vijay" ,"sunjay"];
-    //  const myChildren = myGirls.concat(myboys1 , myboys2);
- 
-    //  document.getElementById("demo").innerHTML = myChildren;
+
+    //  console.log(myGirls);
+    //  console.log(myboys1);
+    //  console.log(myboys2);
+
+    //  const myChildren = myboys1.concat(myboys2 , myGirls);
+
     //  console.log(myChildren);
+
+    //  console.log(myGirls);
  }
  
  /* The concat() method does not change the existing arrays. It always returns a new array. */
@@ -281,38 +312,49 @@ Array indexes start with 0:
  /* Splicing and Slicing Arrays */
  
  /* JavaScript Array splice() */
+
+
+// splice(start)
+// splice(start, deleteCount)
+// splice(start, deleteCount, item1)
+// splice(start, deleteCount, item1, item2)
+// splice(start, deleteCount, item1, item2, /* …, */ itemN)
  
  {
     //  const fruits = ["Banana", "Orange", "Apple", "Mango"];
-    //  document.getElementById("demo").innerHTML = fruits;
-    //  fruits.splice(0 , 2, "item1" , "item2");
-    //  document.getElementById("demo-1").innerHTML = fruits;
+
+    //  console.log(fruits);
+
+    //  fruits.splice(0 , 1);
+
+    //  console.log(fruits);
+
  }
  
  {
     //  const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
     //  document.getElementById("demo").innerHTML = "Original Array:<br> " + fruits;
-    //  let removed = fruits.splice(2, 2, "Lemon", "Kiwi"); 
+
+    //  let removed = fruits.splice(2, 2, "Lemon"); 
+
     //  document.getElementById("demo-1").innerHTML = "New Array:<br>" + fruits;
+
     //  document.getElementById("demo-2").innerHTML = "Removed Items:<br> " + removed; 
  }
  
- /*  Using splice() to Remove Elements */
- 
- {
-    //  const fruits = ["Banana", "Orange", "Apple", "Mango"];
-    //  document.getElementById("demo-1").innerHTML = fruits;
-    //  fruits.splice(0, 1);
-    //  document.getElementById("demo-2").innerHTML = fruits;
- }
- 
  /* JavaScript Array slice() */
+
+// slice()
+// slice(start)
+// slice(start, end)
  
  {
-     // const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
-     // const newremove = fruits.slice(2 , 4);
-     // document.getElementById("demo").innerHTML = fruits + "<br><br>" + newremove;
-     // document.getElementById("demo1").innerHTML = fruits;
+    //  const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango","Watermelon"];
+    //  const newremove = fruits.slice(1 , 3);
+    //  document.getElementById("demo").innerHTML = fruits + "<br><br>" + newremove;
+
+    //  console.log(fruits);
  }
  
  /*  Array.isArray */
@@ -320,15 +362,15 @@ Array indexes start with 0:
  {
     //  let book = ["math"  , "chemistry"  , "physics" , "bio"];
     //  let books = "string";
-    //  console.log(Array.isArray(book));
+    //  console.log(Array.isArray(books));
  }
  
  /*  javascript Sorting Array */
  
  {
-     let book = ["math"  , "chemistry"  , "physics" , "bio" , "amazon"];
-     let books = book.sort();
-     console.log(books);
+    //  let book = ["math"  , "chemistry"  , "physics" , "bio" , "amazon"];
+    //  let books = book.sort();
+    //  console.log(books);
  }
  
  /*  Reversing array */
@@ -345,10 +387,11 @@ Array indexes start with 0:
  /*  Number Sort */
  
  {
-     const number1 = [40, 12, 15, 81 ,150 ,200];
-     console.log(number1);
-     const number2 = number1.sort(function(a , b){return a - b});
-     console.log(number2);
+    //  const number1 = [40, 12, 15, 81 ,150 ,200];
+    //  let number = number1.sort()
+    //  console.log(number);
+    //  const number2 = number1.sort(function(a , b){return a - b});
+    //  console.log(number2);
  }
  
  /*  Javascript Array Iteration */
