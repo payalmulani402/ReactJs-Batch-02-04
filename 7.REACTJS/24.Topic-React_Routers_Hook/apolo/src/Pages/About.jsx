@@ -33,8 +33,6 @@ const About = () => {
       </div>
       <ul className="flex">
         <li><Link className="link" to="/">Go to Home Page</Link></li>
-        <li><Link className="link" to="/user/mark">Mark Page</Link></li>
-        <li><Link className="link" to="/user/peter">Peter Page</Link></li>
       </ul>
     </div>
   );
