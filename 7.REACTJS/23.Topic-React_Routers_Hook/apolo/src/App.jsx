@@ -3,6 +3,8 @@ import {BrowserRouter, Routes ,Route} from 'react-router-dom'
 import Home from './Pages/Home'
 import About from './Pages/About'
 import Product from './Pages/Product'
+import User from './Pages/User'
+// import Error404 from './Pages/Error404'
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
             <Route path="/" element={<Home/>}></Route>
             <Route path="/about" element={<About/>}></Route>
             <Route path="/product" element={<Product/>}></Route>
+            <Route path="/user/:name" element={<User/>}></Route>
+            {/* <Route path="/*" element={<Error404/>}></Route> */}
           </Routes>
       </BrowserRouter>
     </div>
