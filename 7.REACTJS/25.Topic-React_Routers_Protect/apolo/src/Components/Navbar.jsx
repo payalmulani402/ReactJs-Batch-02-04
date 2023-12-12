@@ -11,6 +11,7 @@ const Navbar = () => {
                         <li><Link className='underline text-white text-2xl' to="/about">About</Link></li>
                         <li><Link className='underline text-white text-2xl' to="/product">Product</Link></li>
                         <li><Link className='underline text-white text-2xl' to="/filter">Filter</Link></li>
+                        <li><Link className='underline text-white text-2xl' to="/contact">Contact</Link></li>
                     </ul>
                 </nav>
             </div>
