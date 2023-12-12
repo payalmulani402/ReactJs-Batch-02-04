@@ -6,9 +6,17 @@ const About = () => {
 
   const navigate = useNavigate();
 
-  const navToPage = () =>{  
-    navigate('/filter')
-  }
+    const navToPage = () =>{
+      const x = false;
+
+      if(x){
+        navigate('/')
+      }
+      else{
+        navigate('./product')
+      }
+    }
+ 
 
   return (
     <div>
@@ -40,8 +48,8 @@ const About = () => {
       </div>
       <ul>
         <li><Link className="link" to="/">Go to Home Page</Link></li>
-        <li><button className="link" onClick={() => navigate('/product')}>Product Page</button></li>
-        <li><button className="link" onClick={() => navigate('/filter')}>Filter Page</button></li>
+        {/* <li><button className="link" onClick={() => navigate('/product')}>Product Page</button></li>
+        <li><button className="link" onClick={() => navigate('/filter')}>Filter Page</button></li> */}
         <li><button className="link" onClick={() => navToPage()}>Product Page</button></li>
         <li><button className="link" onClick={() => navToPage()}>Filter Page</button></li>
       </ul>
