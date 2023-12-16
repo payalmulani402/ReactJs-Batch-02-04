@@ -8,6 +8,8 @@ import Contact from './Pages/Contact'
 import Company from './Pages/Company'
 import Channel from './Pages/Channel'
 import Other from './Pages/Other'
+import Login from './Pages/Login'
+import ProtectedRoute from './Pages/ProtectedRoute'
 
 function App() {
   return (
@@ -15,7 +17,7 @@ function App() {
     <div>
       <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Home/>}></Route>
+            <Route path="/" element={<ProtectedRoute Component={Home}/>}></Route>
             <Route path="/about" element={<About/>}></Route>
             <Route path="/product" element={<Product/>}></Route>
             <Route path="/filter" element={<Filter/>}></Route>
@@ -24,6 +26,7 @@ function App() {
               <Route path='channel' element={<Channel/>}/>
               <Route path='other' element={<Other/>}/>
             </Route>  
+            <Route path='/login' element={<Login/>}></Route>
           </Routes>
       </BrowserRouter>
     </div>
