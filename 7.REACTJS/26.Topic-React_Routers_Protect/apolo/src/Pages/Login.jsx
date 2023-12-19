@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import { useNavigate } from "react-router-dom"
+import Navbar from "../Components/Navbar"
 const Login = () => {
 
   const login = () =>{
@@ -17,6 +18,7 @@ const Login = () => {
 
   return (
     <div>
+      <Navbar/>
       <h1>Login Form</h1>
       <form>
           <label>UserName</label>
