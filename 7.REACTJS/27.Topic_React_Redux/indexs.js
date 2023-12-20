@@ -1,5 +1,9 @@
+const { applyMiddleware } = require("redux")
 const redux = require("redux")
+const reduxLogger = require('redux-logger')
+
 const createStore = redux.createStore
+const logger = reduxLogger.createLogger()
 
 const BUY_CAKE = 'BUY_CAKE'
 
@@ -15,7 +19,7 @@ const initialState = {
      numOfCakes:10,
 }
 
-const Cakereducer = (state = initialState , action) => {
+const reducer = (state = initialState , action) => {
      switch(action.type){
           case BUY_CAKE:return{
                ...state,
@@ -25,8 +29,8 @@ const Cakereducer = (state = initialState , action) => {
      }
 }
 
-const store = createStore(reducer)
+const store = createStore(reducer , applyMiddleware(logger))
 console.log('Initial State' , store.getState());
-const unsubscribe = store.subscribe(() => console.log('Updated state' , store.getState() ))
+const unsubscribe = store.subscribe(() => {})
 store.dispatch(buyCake())
 unsubscribe()
