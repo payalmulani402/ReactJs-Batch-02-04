@@ -1,5 +1,4 @@
 import { useEffect } from 'react'
-import {PropTypes} from 'react-dom'
 import {useNavigate} from 'react-router-dom'
 
 const ProtectedRoute = (props) => {
@@ -14,13 +13,8 @@ const ProtectedRoute = (props) => {
       }
      })
 
-     ProtectedRoute.propTypes = {
-          Component:PropTypes.Function
-     }
-
   return (
     <div>
-
       <Component/>
     </div>
   )

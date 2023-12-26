@@ -8,7 +8,7 @@ import Contact from './Pages/Contact'
 import Company from './Pages/Company'
 import Channel from './Pages/Channel'
 import Other from './Pages/Other'
-import Login from './Pages/Login'
+import Login from './Components/Login'
 import ProtectedRoute from './Pages/ProtectedRoute'
 
 function App() {

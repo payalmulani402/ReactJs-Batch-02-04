@@ -4,8 +4,8 @@ import { buyCake } from "./Redux/Cake/CakeActions"
 const CakeContainer = (props) => {
   return (
     <div>
-      <h2>Number Of Cakes - {props.numOfCakes}</h2>
-      <button onClick={props.buyCake}>Buy Cake</button>
+      <h2 className="link">Number Of Cakes - {props.numOfCakes}</h2>
+      <button className="button" onClick={props.buyCake}>Buy Cake</button>
     </div>
   )
 }
