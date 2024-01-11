@@ -1,14 +1,11 @@
-import React from 'react';
-import productsData from '../data/productsData';
-import ProductsCard from '../components/ProductsCard';
-import Header from '../components/Header';
+import React from 'react'
+import ProductsCard from '../components/ProductsCard'
 
-const Home = () => {
-    return (
-        <>
-            <section id="home">
+const Shop = () => {
+  return (
+    <div>
+      <section id="home">
                 <div className="container">
-                    <Header/>
                     <div className="home_content">
                         {
                             productsData.map((item) => (
@@ -18,8 +15,8 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-        </>
-    );
-};
+    </div>
+  )
+}
 
-export default Home;
+export default Shop

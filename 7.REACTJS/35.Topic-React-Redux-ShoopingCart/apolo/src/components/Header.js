@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleCart } from '../store/slices/cartSlice';
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
@@ -34,6 +35,9 @@ const Header = () => {
                                 <span className="badge">{cartQuantity}</span>
                             </div>
                         </div>
+                    </div>
+                    <div>
+                        <Link to="/shop">Shop Page</Link>
                     </div>
                 </div>
             </header>
